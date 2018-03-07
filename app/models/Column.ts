@@ -43,7 +43,7 @@ export default class Column {
     @action moveCard(cardId, toIdx, isNew) {
         const idx = this.cards.findIndex(({ id }) => id === cardId);
         if (idx >= 0) {
-            this.cards.move(idx, isNew ? (idx - toIdx) : (idx + toIdx));
+            this.cards.move(idx, isNew ? toIdx : (idx + toIdx));
         }
     }
 
