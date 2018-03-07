@@ -1,0 +1,29 @@
+$radius: 6px;
+
+#menu-button {
+    margin: 0;
+    flex: auto;
+
+    .md-list {
+        border-radius: $radius;
+    }
+
+    .column-menu-item {
+        width: 100%;
+    }
+}
+
+.ItemMenu {
+    padding: 0px !important;
+    height: 30px !important;
+    width: 30px !important;
+    float: right;
+
+    &-item {
+        border-radius: $radius;
+
+        .md-list-item {
+            margin: 0;
+        }
+    }
+}

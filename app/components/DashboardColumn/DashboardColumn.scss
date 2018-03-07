@@ -1,0 +1,43 @@
+@import '~react-md/src/scss/_colors.scss';
+
+$radius: 6px;
+
+.DashboardColumn {
+
+    &-body {
+        min-width: 200px;
+        background: $md-teal-100 !important;
+        border-radius: $radius;
+
+        .md-card-title {
+            padding: 10px;
+            
+            &--title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .column-item-container  {
+        padding: 4px;
+
+        .ColumnItem {
+            border-radius: $radius;
+
+            &-body {
+                border-radius: inherit;
+                background: $md-teal-50;
+
+                #menu-button {
+                    float: right;
+                }
+
+                &-text {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+}

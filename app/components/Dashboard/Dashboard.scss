@@ -1,0 +1,22 @@
+.Dashboard {
+
+    .add-column {
+        max-width: 250px;
+        
+    }
+
+    .container-dash-columns {
+        display: inline-flex;
+    }
+
+    .dash-columns {
+        flex-flow: row;
+        overflow-x: auto;
+        justify-content: center;
+
+        .column-container {
+            margin: 0 4px;
+        }
+    }
+
+}
